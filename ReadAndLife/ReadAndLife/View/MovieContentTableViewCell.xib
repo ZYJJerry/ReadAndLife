@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="584" id="KGk-i7-Jjw" customClass="MovieContentTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="297" height="584"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="297" height="583"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9vt-Rl-JKS">
+                        <rect key="frame" x="0.0" y="0.0" width="297" height="297"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="9vt-Rl-JKS" secondAttribute="height" multiplier="15:15" id="Fvt-Cd-B94"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TOX-NC-uaI">
+                        <rect key="frame" x="0.0" y="286" width="297" height="297"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yy4-OE-oIt">
+                        <rect key="frame" x="10" y="346" width="277" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.99463213979999998" green="1" blue="0.91697244850000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvM-p5-hEs">
+                        <rect key="frame" x="10" y="386" width="277" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TOX-NC-uaI" secondAttribute="bottom" id="2re-2N-ikr"/>
+                    <constraint firstAttribute="trailing" secondItem="TOX-NC-uaI" secondAttribute="trailing" id="3Np-Tw-yMq"/>
+                    <constraint firstItem="TOX-NC-uaI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AvH-28-uZW"/>
+                    <constraint firstItem="LvM-p5-hEs" firstAttribute="top" secondItem="yy4-OE-oIt" secondAttribute="bottom" constant="20" id="KOu-U2-rql"/>
+                    <constraint firstItem="TOX-NC-uaI" firstAttribute="width" secondItem="9vt-Rl-JKS" secondAttribute="width" id="QgP-4H-YfM"/>
+                    <constraint firstItem="9vt-Rl-JKS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Rw8-lc-BWX"/>
+                    <constraint firstAttribute="trailing" secondItem="yy4-OE-oIt" secondAttribute="trailing" constant="10" id="Sxf-a5-uI2"/>
+                    <constraint firstAttribute="trailing" secondItem="LvM-p5-hEs" secondAttribute="trailing" constant="10" id="TPG-mQ-cNq"/>
+                    <constraint firstItem="yy4-OE-oIt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="UMJ-nT-ob4"/>
+                    <constraint firstAttribute="trailing" secondItem="9vt-Rl-JKS" secondAttribute="trailing" id="WLb-ld-pGV"/>
+                    <constraint firstAttribute="bottom" secondItem="LvM-p5-hEs" secondAttribute="bottom" constant="180" id="XIX-ai-kTo"/>
+                    <constraint firstItem="TOX-NC-uaI" firstAttribute="height" secondItem="9vt-Rl-JKS" secondAttribute="height" id="bSl-Yj-sgF"/>
+                    <constraint firstItem="LvM-p5-hEs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="dvm-b9-K6V"/>
+                    <constraint firstItem="9vt-Rl-JKS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uut-gD-eWz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="PicImageView" destination="9vt-Rl-JKS" id="FoX-qa-X2p"/>
+                <outlet property="backImageView" destination="TOX-NC-uaI" id="CTs-ko-HYZ"/>
+                <outlet property="desc" destination="LvM-p5-hEs" id="2lz-Ym-QMs"/>
+                <outlet property="title" destination="yy4-OE-oIt" id="c73-kJ-vzL"/>
+            </connections>
+            <point key="canvasLocation" x="401.5" y="334"/>
+        </tableViewCell>
+    </objects>
+</document>

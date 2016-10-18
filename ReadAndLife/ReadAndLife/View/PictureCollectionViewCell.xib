@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PictureCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="127" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="127" height="159"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSW-nH-dn6">
+                        <rect key="frame" x="5" y="139" width="117" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="TbE-js-sdV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Ow-8U-upc">
+                        <rect key="frame" x="0.0" y="0.0" width="127" height="134"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4Ow-8U-upc" secondAttribute="trailing" id="Dmp-3l-s3m"/>
+                <constraint firstAttribute="trailing" secondItem="SSW-nH-dn6" secondAttribute="trailing" constant="5" id="Ghl-XQ-3Dl"/>
+                <constraint firstAttribute="trailing" secondItem="4Ow-8U-upc" secondAttribute="trailing" id="MSA-Iu-hfz"/>
+                <constraint firstAttribute="bottom" secondItem="SSW-nH-dn6" secondAttribute="bottom" constant="5" id="YQH-v2-VKY"/>
+                <constraint firstItem="4Ow-8U-upc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eEj-UT-6gL"/>
+                <constraint firstItem="4Ow-8U-upc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="goh-vL-b2M"/>
+                <constraint firstItem="SSW-nH-dn6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="i06-0l-3Q5"/>
+                <constraint firstItem="SSW-nH-dn6" firstAttribute="top" secondItem="4Ow-8U-upc" secondAttribute="bottom" constant="5" id="x7O-kc-hLv"/>
+            </constraints>
+            <size key="customSize" width="127" height="159"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="MSA-Iu-hfz"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="PicTureImage" destination="4Ow-8U-upc" id="c7A-hj-vVP"/>
+                <outlet property="descLabel" destination="SSW-nH-dn6" id="FHk-bF-10u"/>
+            </connections>
+            <point key="canvasLocation" x="425.5" y="328.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
