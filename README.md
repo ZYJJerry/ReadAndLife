@@ -3,3 +3,6 @@
 ---
 ##运用到的技术
 ol AutoLayout
+*   Red
+*   Green
+*   Blue
